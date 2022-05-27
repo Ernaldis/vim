@@ -43,12 +43,14 @@ filetype plugin indent on    " required
 
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-let g:instant_markdown_python = 1
 
 " Use tabs only if editing a .sh file
 if &filetype ==# 'sh'
   setlocal noexpandtab
 endif
+
+" Turn off auto tab configuration for python files
+let g:python_recommended_style=0
 
 " Activate rainbow
 let g:rainbow_active = 1
