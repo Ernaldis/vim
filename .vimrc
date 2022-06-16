@@ -15,7 +15,8 @@ Plugin 'https://github.com/vim-syntastic/syntastic'
 Plugin 'https://github.com/frazrepo/vim-rainbow'
 Plugin 'https://github.com/tpope/vim-surround'
 Plugin 'https://github.com/psf/black'
-Plugin 'https://github.com/airblade/vim-gitgutter/'
+Plugin 'https://github.com/Yggdroot/indentLine'
+Plugin 'https://github.com/pedrohdz/vim-yaml-folds'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
